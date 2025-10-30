@@ -1,0 +1,18 @@
+Abordagens:
+| USADOS PARA PROJETOS DE CURTA DURAÇÃO |
+- Gravadores: Selenium IDE e Playwright Inspector/Codegen
+--> 1 arquivo: .spec.js
+- Script Simples
+--> 1 arquivo: .spec.js
+| USADOS PARA PROJETOS DE LONGA DURAÇÃO |
+- Script Estruturado
+--> 1 arquivo + N arquivos (funções uteis ou compartilhadas)
+- Script BDD/Gherkin
+--> 3 arquivos:
+    - negócio   (critério de aceitação):    .feature
+    - steps     (passos da automação):      .js
+    - hook      (gatilho/configuração):     .js
+    --> Framework Cucumber
+- Script Page Objects/Page Factory
+    - mapeamento de páginas/telas: 1 arquivo para compartilhadas
+    - automação (único ou BDD)
